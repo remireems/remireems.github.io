@@ -1,0 +1,46 @@
+.introSec {
+  display: flex;
+  height: 100vh;
+}
+
+.introDiv {
+  flex: 1;
+  /* padding: 160px; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.iName {
+  font-size: 110px;
+}
+
+.titlesDiv {
+  height: 50px;
+  overflow: hidden;
+}
+
+.titlesBox {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+  -webkit-animation: move 6s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.title {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,21 @@
+.projectsSec {
+  /* height: 100vh; */
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* padding: 30px 100px; */
+  padding-top: 15px;
+}
+
+.proTitle {
+  font-size: 50px;
+}
+
+.proList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+}

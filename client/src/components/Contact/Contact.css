@@ -1,0 +1,25 @@
+.conSec {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.conTitle {
+  font-size: 50px;
+}
+
+.conDes {
+  display: flex;
+  justify-content: center;
+}
+
+.conText {
+  width: 55%;
+  font-size: 18px;
+}
+
+.tempBtn {
+  margin-top: 10px;
+}

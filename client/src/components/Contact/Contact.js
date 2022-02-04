@@ -1,0 +1,18 @@
+import './Contact.css'
+
+const Contact = () => {
+  return (
+    <div className="conSec">
+      <div className="conDiv">
+        <h1 className="conTitle">Reach Out</h1>
+        <div className="conDes">
+          <p className="conText">I am looking for opportunities to learn, gain experiences, and  improve my skills! Please reach out to me, I would love to get in touch with you. </p>
+        </div>
+        <button className="tempBtn">Button</button>
+        
+      </div>
+    </div>
+  )
+}
+
+export default Contact

@@ -1,0 +1,45 @@
+.aboutSec {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.aboutDes {
+  flex: 1;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 20px; */
+}
+
+.aboutImg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+
+}
+
+.aBgDiv {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: red;
+
+}
+
+.aPicDiv {
+  width: 70%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+}
+
+.aPic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
