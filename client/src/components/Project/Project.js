@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import './Project.css'
 
 const Project = ({ title, des, techs, link, ghLink }) => {
@@ -10,7 +12,7 @@ const Project = ({ title, des, techs, link, ghLink }) => {
     <div className="pCard">
       <div className="pIcon">
         <a href={ghLink} target="_blank" rel="noreferrer" className="ghIcon">
-          H
+          <FontAwesomeIcon icon={faGithub} size='lg'/>
         </a>
       </div>
       <h2>

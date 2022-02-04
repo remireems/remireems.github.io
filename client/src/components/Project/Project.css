@@ -23,6 +23,11 @@
   flex-wrap: wrap;
 }
 
+.ghIcon:hover {
+  color: aqua;
+}
+
+
 .pTechLi {
   list-style: none;
   display: flex;
