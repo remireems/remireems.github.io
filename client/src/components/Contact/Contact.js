@@ -17,7 +17,6 @@ const Contact = (props) => {
         <div className="conDes">
           <p className="conText">I am looking for opportunities to learn, gain experiences, and  improve my skills! Please reach out to me, I would love to get in touch with you. </p>
         </div>
-        {/* <button className="tempBtn">Button</button> */}
         <div>
           <Button variant="primary" onClick={handleShow}>
             Get in Contact
@@ -27,7 +26,7 @@ const Contact = (props) => {
             aria-labelledby="contained-modal-title-vcenter"
             centered>
             <Modal.Header closeButton>
-              <Modal.Title>Modal heading</Modal.Title>
+              <Modal.Title>Get in contact by sending me an email!</Modal.Title>
             </Modal.Header>
             <Modal.Body><ContactForm /></Modal.Body>
             <Modal.Footer>
@@ -35,12 +34,12 @@ const Contact = (props) => {
                 Close
               </Button>
               <Button variant="primary" onClick={handleClose}>
-                Save Changes
+                Send
               </Button>
             </Modal.Footer>
           </Modal>
         </div>
-        
+
       </div>
     </div>
   )
