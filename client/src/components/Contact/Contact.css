@@ -23,3 +23,12 @@
 .tempBtn {
   margin-top: 10px;
 }
+
+.contactBtns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hrLine {
+  width: 100%;
+}
