@@ -14,12 +14,12 @@ const ContactForm = (props) => {
   const handleSend = event => {
     event.preventDefault()
 
-    emailjs.sendForm('service_loewtu5', 'template_jkih7i9', 
+    emailjs.sendForm('service_loewtu5', 'template_jkih7i9',
       formRef.current, '9yab1r4ZWVrO1PBhw')
       .then((result) => {
         handleClose()
         alert('Email sent!')
-        console.log(result.text);      
+        console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
@@ -55,9 +55,9 @@ const ContactForm = (props) => {
               <Button variant="secondary" onClick={handleClose}>
                 Close
               </Button>
-              <Button 
-              className='ms-2'
-              variant="primary" onClick={handleSend}>
+              <Button
+                className='ms-2'
+                variant="primary" onClick={handleSend}>
                 Send
               </Button>
             </div>
