@@ -2,7 +2,7 @@ export const prosData = [
   {
     id: 1,
     title: 'My Portfolio',
-    description: 'Hello world',
+    description: 'My portfolio',
     techs: ['React', 'CSS', 'JavaScript'],
     link: 'remireems.github.io',
     ghLink: 'https://github.com/remireems'
