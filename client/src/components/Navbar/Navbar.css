@@ -1,0 +1,12 @@
+#navStyle {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  z-index: 1;
+}
+
+#navCont {
+  margin: 0px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}

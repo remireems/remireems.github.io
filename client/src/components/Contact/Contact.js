@@ -1,4 +1,4 @@
-import ContactForm from '../ContactForm/ContactForm'
+// import ContactForm from '../ContactForm/ContactForm'
 import './Contact.css'
 
 const Contact = () => {
@@ -11,7 +11,7 @@ const Contact = () => {
           <p className="conText">I am looking for opportunities to learn, gain experiences, and  improve my skills! Please reach out to me, I would love to get in touch with you. </p>
         </div>
         <div>
-          <ContactForm />
+          {/* <ContactForm /> */}
         </div>
         
       </div>
