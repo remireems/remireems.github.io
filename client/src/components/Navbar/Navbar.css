@@ -1,16 +1,13 @@
-/* #navStyle {
+#navStyle {
   position: fixed;
   width: 100%;
   left: 0px;
   z-index: 1;
-} */
+}
 
-/* #navCont {
+#navCont {
   margin: 0px;
   padding-left: 3rem;
   padding-right: 3rem;
-} */
-
-.css-1t6c9ts {
-  justify-content: end;
 }
+
