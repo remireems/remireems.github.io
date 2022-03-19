@@ -29,8 +29,8 @@ const Project = ({ title, des, techs, link, ghLink }) => {
     //     {techList}
     //   </ul>
     // </div>
-    <div>
-      <Card style={{ width: '18rem' }}>
+    // <div>
+      <Card className="mb-3" style={{ width: '18rem' }}>
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{des}</Card.Text>
@@ -42,7 +42,7 @@ const Project = ({ title, des, techs, link, ghLink }) => {
           <Card.Link href={ghLink} target="_blank"><FontAwesomeIcon icon={faGithub} size='lg' /></Card.Link>
         </Card.Body>
       </Card>
-    </div>
+    //  </div>
 
     // <Row xs={1} md={2} className="g-4">
     //   {Array.from({ length: 1 }).map((_, idx) => (
