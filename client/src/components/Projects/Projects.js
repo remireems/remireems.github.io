@@ -1,6 +1,5 @@
 import Project from '../Project/Project'
 import { prosData } from '../../projectData'
-import { Container, Row } from 'react-bootstrap'
 import './Projects.css'
 
 const Projects = () => {
@@ -9,7 +8,6 @@ const Projects = () => {
       <div className="proTxt">
         <h1 className="proTitle">My Projects</h1>
       </div>
-
       <div>
         <div className="proCard">
           {prosData.map(item => (
@@ -17,7 +15,6 @@ const Projects = () => {
           ))}
         </div>
       </div>
-
     </div>
   )
 }
