@@ -26,7 +26,7 @@ const NavMenu = () => {
       </Navbar> */}
 
       <nav className='nav'>
-        <a href="/">Home</a>
+        <a href="#intro">Home</a>
         <ul className='navLi'>
           <li>
             <a href="/">About</a>
