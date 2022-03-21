@@ -10,7 +10,7 @@ const NavMenu = () => {
 
   return (
     <div className="navSec">
-      <Navbar bg="light" expand="lg" id='navStyle'>
+      {/* <Navbar bg="light" expand="lg" id='navStyle'>
         <Container id='navCont'>
           <Navbar.Brand href="/Intro">RK</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -19,11 +19,29 @@ const NavMenu = () => {
               <Nav.Link href="/About">About</Nav.Link>
               <Nav.Link href="/Projects">Projects</Nav.Link>
               <Nav.Link href="/Contact">Contact</Nav.Link>
-              <Button>Resume</Button>              
+              <Button>Resume</Button>
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
+
+      <nav className='nav'>
+        <a href="/">Home</a>
+        <ul className='navLi'>
+          <li>
+            <a href="/">About</a>
+          </li>
+          <li>
+            <a href="/">Projects</a>
+          </li>
+          <li>
+            <a href="/">Contact</a>
+          </li>
+          <li>
+            <Button>Resume</Button>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 
