@@ -29,13 +29,13 @@ const NavMenu = () => {
         <a href="#intro">Home</a>
         <ul className='navLi'>
           <li>
-            <a href="/">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="/">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
             <Button>Resume</Button>
