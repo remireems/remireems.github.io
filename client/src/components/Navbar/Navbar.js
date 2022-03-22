@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faHome } from '@fortawesome/free-solid-svg-icons'
 import { Navbar, Container, Nav, Button } from 'react-bootstrap'
 import { useState } from 'react'
 
@@ -26,18 +28,21 @@ const NavMenu = () => {
       </Navbar> */}
 
       <nav className='nav'>
-        <a href="#intro">Home</a>
-        <ul className='navLi'>
-          <li>
+        <a href="#intro" className='navHome'>
+          <FontAwesomeIcon icon={faHome} size='2x' />
+        </a>
+        <FontAwesomeIcon icon={faBars} className='navMenuIcon' size='2x' />
+        <ul className='navMenu'>
+          <li className='navTab'>
             <a href="#about">About</a>
           </li>
-          <li>
+          <li className='navTab'>
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          <li className='navTab'>
             <a href="#contact">Contact</a>
           </li>
-          <li>
+          <li className='navTab'>
             <Button>Resume</Button>
           </li>
         </ul>

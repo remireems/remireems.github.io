@@ -14,7 +14,7 @@
 .navSec {
   background-color: aqua;
   position: fixed;
-  height: 50px;
+  height: 70px;
   width: 100%;
   /* top: 0; */
   left: 0;
@@ -28,20 +28,44 @@
   align-items: center;
   justify-content: space-between;
   /* max-width: 1240px; */
-  /* margin: auto; */
+  margin: auto;
   height: 100%;
   padding: 0 1rem;
 }
 
 .nav a {
   color: black;
+  text-decoration: none;
 }
 
-.navLi {
+.navHome {
+  padding: 0 1rem;
+}
+
+.navHome:hover {
+  color: black;
+}
+
+.navMenuIcon {
+  display: none;
+}
+
+.navMenu {
   list-style: none;
+
   display: flex;
   align-items: center;
-  
+
   padding: 0px;
   margin: 0px;
+}
+
+.navTab {
+  padding: 1rem;
+}
+
+.navTab a:hover {
+  color: black;
+  padding-bottom: 3px;
+  border-bottom: 3px solid black
 }
