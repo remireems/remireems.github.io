@@ -9,3 +9,9 @@
 .App {
   padding: 0px 100px;
 }
+
+@media screen and (max-width: 800px) {
+  .App {
+    padding: 0px 15px;
+  }
+}
