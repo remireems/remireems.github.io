@@ -1,49 +1,35 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faHome } from '@fortawesome/free-solid-svg-icons'
-import { Navbar, Container, Nav, Button } from 'react-bootstrap'
 import { useState } from 'react'
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faHome, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { Button } from 'react-bootstrap'
 import './Navbar.css'
 
-
-
-const NavMenu = () => {
+const Navbar = () => {
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
+  const handleClose = () => setClick(false)
 
   return (
     <div className="navSec">
-      {/* <Navbar bg="light" expand="lg" id='navStyle'>
-        <Container id='navCont'>
-          <Navbar.Brand href="/Intro">RK</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="/About">About</Nav.Link>
-              <Nav.Link href="/Projects">Projects</Nav.Link>
-              <Nav.Link href="/Contact">Contact</Nav.Link>
-              <Button>Resume</Button>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar> */}
-
       <nav className='nav'>
         <a href="#intro" className='navHome'>
           <FontAwesomeIcon icon={faHome} size='2x' />
         </a>
-        <FontAwesomeIcon icon={faBars} className='navMenuIcon' size='2x' />
-        <ul className='navMenu'>
+        <div className='navMenuIcons' onClick={handleClick}>
+          {click ? (<FontAwesomeIcon icon={faTimes} size='2x' />) : (<FontAwesomeIcon icon={faBars} size='2x' />)}
+        </div>
+        <ul className={click ? 'navMenu open' : 'navMenu'}>
           <li className='navTab'>
-            <a href="#about">About</a>
+            <a href="#about" onClick={handleClose} >About</a>
           </li>
           <li className='navTab'>
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={handleClose} >Projects</a>
           </li>
           <li className='navTab'>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleClose} >Contact</a>
           </li>
           <li className='navTab'>
-            <Button>Resume</Button>
+            <Button onClick={handleClose} >Resume</Button>
           </li>
         </ul>
       </nav>
@@ -52,4 +38,4 @@ const NavMenu = () => {
 
 }
 
-export default NavMenu
+export default Navbar

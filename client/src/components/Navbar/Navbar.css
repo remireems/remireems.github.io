@@ -1,16 +1,3 @@
-#navStyle {
-  position: fixed;
-  width: 100%;
-  left: 0px;
-  z-index: 1;
-}
-
-#navCont {
-  margin: 0px;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .navSec {
   background-color: aqua;
   position: fixed;
@@ -46,16 +33,14 @@
   color: black;
 }
 
-.navMenuIcon {
+.navMenuIcons {
   display: none;
 }
 
 .navMenu {
   list-style: none;
-
   display: flex;
   align-items: center;
-
   padding: 0px;
   margin: 0px;
 }
@@ -68,4 +53,36 @@
   color: black;
   padding-bottom: 3px;
   border-bottom: 3px solid black
+}
+
+@media screen and (max-width: 800px) {
+  .navSec {
+    max-width: 100%;
+  }
+
+  .nav {
+    max-width: 100%;
+  }
+
+  .navMenuIcons {
+    display: block;
+  }
+
+  .navMenu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    text-align: center;
+    transition: .5s;
+  }
+
+  .navMenu.open {
+    right: 0;
+  }
+
 }
