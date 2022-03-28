@@ -1,10 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { Container } from 'react-bootstrap'
 import './Intro.css'
+
 
 const Intro = () => {
   return (
-    <div className="introSec" id='intro'>
+    <Container id='intro'>
       <div className="introDiv">
         <h2>Hello, my name is</h2>
         <h1 className="iName">Remi Kim.</h1>
@@ -21,7 +23,7 @@ const Intro = () => {
           <a href="https://www.instagram.com/heeeewonkim/?hl=en" target='_blank' rel="noreferrer" className='iIcons'><FontAwesomeIcon className="me-3" icon={faInstagram} size='2x' /></a>      
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
 

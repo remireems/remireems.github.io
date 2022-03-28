@@ -1,16 +1,15 @@
-.aboutSec {
+#about {
   height: 100vh;
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .aboutDes {
   flex: 1;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
-  /* padding: 20px; */
 }
 
 .aboutImg {
@@ -18,28 +17,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   height: 100%;
-
-}
-
-.aBgDiv {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  background-color: red;
-
 }
 
 .aPicDiv {
-  width: 70%;
-  height: 70vh;
-  border-radius: 30px;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .aPic {
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  #about {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  .aboutImg {
+   margin-bottom: 10px;
+  }
+
+  .aPic {
+    width: 100%;
+  }
 }
