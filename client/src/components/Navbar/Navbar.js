@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faHome, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { Button } from 'react-bootstrap'
@@ -12,21 +13,21 @@ const Navbar = () => {
   return (
     <div className="navSec">
       <nav className='nav'>
-        <a href="#intro" className='navHome'>
+        <Link to="intro" spy={true} smooth={true} offset={-100} duration={325}className='navHome'>
           <FontAwesomeIcon icon={faHome} size='2x' />
-        </a>
+        </Link>
         <div className='navMenuIcons' onClick={handleClick}>
           {click ? (<FontAwesomeIcon icon={faTimes} size='2x' />) : (<FontAwesomeIcon icon={faBars} size='2x' />)}
         </div>
         <ul className={click ? 'navMenu open' : 'navMenu'}>
           <li className='navTab'>
-            <a href="#about" onClick={handleClose} >About</a>
+            <Link to="about" spy={true} smooth={true} offset={-30} duration={300} onClick={handleClose} >About</Link>
           </li>
           <li className='navTab'>
-            <a href="#projects" onClick={handleClose} >Projects</a>
+            <Link to="projects" spy={true} smooth={true} offset={-70} duration={300} onClick={handleClose} >Projects</Link>
           </li>
           <li className='navTab'>
-            <a href="#contact" onClick={handleClose} >Contact</a>
+            <Link to="contact" spy={true} smooth={true} offset={50} duration={300} onClick={handleClose} >Contact</Link>
           </li>
           <li className='navTab'>
             <Button onClick={handleClose} >Resume</Button>
