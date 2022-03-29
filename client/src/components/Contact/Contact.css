@@ -1,9 +1,10 @@
-.conSec {
+#contact {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0;
 }
 
 .conTitle {
@@ -31,4 +32,10 @@
 
 .hrLine {
   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .conText {
+    width: 85%;
+  }
 }
