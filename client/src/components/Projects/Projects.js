@@ -1,10 +1,11 @@
 import Project from '../Project/Project'
 import { prosData } from '../../projectData'
+import { Container } from 'react-bootstrap'
 import './Projects.css'
 
 const Projects = () => {
   return (
-    <div className="projectsSec" id='projects'>
+    <Container id='projects'>
       <div className="proTxt">
         <h1 className="proTitle">My Projects</h1>
       </div>
@@ -15,7 +16,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Container>
   )
 }
 
