@@ -55,3 +55,9 @@
 .iIcons {
   color: black;
 }
+
+@media screen and (max-width: 800px) {
+  .iName {
+    font-size: 70px;
+  }
+}
