@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faHome, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -10,8 +10,27 @@ const Navbar = () => {
   const handleClick = () => setClick(!click)
   const handleClose = () => setClick(false)
 
+  // const [ show, setShow] = useState(true)
+  // const handleNav = () => {
+  //   if (window.scrollY > 100) {
+  //     setShow(false)
+  //   } else {
+  //     setShow(true)
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleNav)
+  //   return () => {
+  //     window.removeEventListener('scroll', handleNav)
+  //   }
+  // }, [])
+
+//   className = { show && 'navSec'
+// }
+
   return (
-    <div className="navSec">
+    <div className='navSec'>
       <nav className='nav'>
         <Link to="intro" spy={true} smooth={true} offset={-100} duration={325}className='navHome'>
           <FontAwesomeIcon icon={faHome} size='2x' />
@@ -30,7 +49,7 @@ const Navbar = () => {
             <Link to="contact" spy={true} smooth={true} offset={50} duration={300} onClick={handleClose} >Contact</Link>
           </li>
           <li className='navTab'>
-            <Button onClick={handleClose} >Resume</Button>
+            <Button onClick={handleClose} variant="outline-light" >Resume</Button>
           </li>
         </ul>
       </nav>
