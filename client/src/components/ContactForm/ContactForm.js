@@ -27,7 +27,7 @@ const ContactForm = (props) => {
 
   return (
     <div>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="outline-light" onClick={handleShow}>
         Get in Contact
       </Button>
 
