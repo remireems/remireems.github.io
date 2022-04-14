@@ -26,13 +26,13 @@ const Navbar = () => {
   //   }
   // }, [])
 
-//   className = { show && 'navSec'
-// }
+  //   className = { show && 'navSec'
+  // }
 
   return (
     <div className='navSec'>
       <nav className='nav'>
-        <Link to="intro" spy={true} smooth={true} offset={-100} duration={325}className='navHome'>
+        <Link to="intro" spy={true} smooth={true} offset={-100} duration={325} className='navHome' onClick={handleClose}>
           <FontAwesomeIcon icon={faHome} size='2x' />
         </Link>
         <div className='navMenuIcons' onClick={handleClick}>
@@ -49,7 +49,10 @@ const Navbar = () => {
             <Link to="contact" spy={true} smooth={true} offset={50} duration={300} onClick={handleClose} >Contact</Link>
           </li>
           <li className='navTab'>
-            <Button onClick={handleClose} variant="outline-light" >Resume</Button>
+            <Button onClick={handleClose} variant="outline-light link" href=''>
+              {/* <a href="file:///Users/heewon/Downloads/Web%20Developer%20Resume.pdf" target='_blank' rel="noreferrer">Resume</a> */}
+              Resume
+            </Button>
           </li>
         </ul>
       </nav>
