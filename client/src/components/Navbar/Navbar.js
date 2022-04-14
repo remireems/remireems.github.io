@@ -3,6 +3,7 @@ import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faHome, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { Button } from 'react-bootstrap'
+import Resume from '../Resume/WDR2.pdf'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -49,8 +50,7 @@ const Navbar = () => {
             <Link to="contact" spy={true} smooth={true} offset={50} duration={300} onClick={handleClose} >Contact</Link>
           </li>
           <li className='navTab'>
-            <Button onClick={handleClose} variant="outline-light link" href=''>
-              {/* <a href="file:///Users/heewon/Downloads/Web%20Developer%20Resume.pdf" target='_blank' rel="noreferrer">Resume</a> */}
+            <Button onClick={handleClose} variant="outline-light link" href={Resume} target='_blank'>
               Resume
             </Button>
           </li>
