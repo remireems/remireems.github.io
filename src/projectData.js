@@ -5,7 +5,7 @@ export const prosData = [
     description: 'My web developer portfolio',
     techs: ['React', 'JavaScript', 'Node.js'],
     link: 'https://remikim.herokuapp.com/',
-    ghLink: 'https://github.com/remireems'
+    ghLink: 'https://github.com/remireems/remireems.github.io'
   },
   {
     id: 2,
