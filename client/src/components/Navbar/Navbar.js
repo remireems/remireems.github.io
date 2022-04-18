@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faHome, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -10,25 +10,6 @@ const Navbar = () => {
   const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
   const handleClose = () => setClick(false)
-
-  // const [ show, setShow] = useState(true)
-  // const handleNav = () => {
-  //   if (window.scrollY > 100) {
-  //     setShow(false)
-  //   } else {
-  //     setShow(true)
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleNav)
-  //   return () => {
-  //     window.removeEventListener('scroll', handleNav)
-  //   }
-  // }, [])
-
-  //   className = { show && 'navSec'
-  // }
 
   return (
     <div className='navSec'>
