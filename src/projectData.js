@@ -19,7 +19,7 @@ export const prosData = [
     id: 3,
     title: 'PUB',
     description: 'Another group project as a front-end developer. Our team developed an application where you can create, share, and track projects.',
-    techs: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
+    techs: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
     link: 'https://pure-brook-86019.herokuapp.com/',
     ghLink: 'https://github.com/sequint/pub'
   },
