@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faHome, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { Button } from 'react-bootstrap'
-import Resume from '../Resume/WDR2.pdf'
+import Resume from '../Resume/WDR.pdf'
 import './Navbar.css'
 
 const Navbar = () => {
