@@ -19,7 +19,7 @@ const Intro = () => {
         </div>
         <div className="iAcc mt-2">
           <a href="https://github.com/remireems" target='_blank' rel="noreferrer" className='iIcons'><FontAwesomeIcon className="me-3" icon={faGithub} size='2x' /></a>
-          <a href="https://www.linkedin.com/in/remi-kim-186113217/" target='_blank' rel="noreferrer" className='iIcons'><FontAwesomeIcon className="me-3" icon={faLinkedin} size='2x' /></a>
+          <a href="https://www.linkedin.com/in/remirems/" target='_blank' rel="noreferrer" className='iIcons'><FontAwesomeIcon className="me-3" icon={faLinkedin} size='2x' /></a>
           <a href="https://www.instagram.com/heeeewonkim/?hl=en" target='_blank' rel="noreferrer" className='iIcons'><FontAwesomeIcon className="me-3" icon={faInstagram} size='2x' /></a>      
         </div>
       </div>
